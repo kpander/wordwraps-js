@@ -1,0 +1,43 @@
+{
+  "name": "@kpander/wordwraps-js",
+  "version": "2.0.0",
+  "description": "Remove trailing widows and prevent unwanted word wraps in HTML content",
+  "homepage": "https://github.com/kpander/wordwraps-js",
+  "author": {
+    "name": "Kendall Anderson",
+    "email": "<kpander@invisiblethreads.com>"
+  },
+  "main": "index.js",
+  "files": [
+    "dist/Wordwraps.js",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpander/wordwraps-js.git"
+  },
+  "keywords": [
+    "widow",
+    "orphan",
+    "copyediting"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kpander/wordwraps-js/issues"
+  },
+  "devDependencies": {
+    "@kpander/packager-js": "^1.0.1",
+    "jest": "^29.6.4"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
+}
