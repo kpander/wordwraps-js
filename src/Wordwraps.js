@@ -12,12 +12,14 @@ const nobreakhyphen = '&#8209;';
 
 class Wordwraps {
 
-  static process(html, options = {}) {
+  static process(html, srcOptions = {}) {
     const defaults = {
       widows: "h1, h2, h3, h4, h5, h6, p, li, th, td, dt, dd, a",
       hyphens: "h1, h2, h3, h4, h5, h6, o, li, th, td, dt, dd, a, span",
       groups: "h1, h2, h3, h4, h5, h6, o, li, th, td, dt, dd, a, span",
     };
+
+    let options = { ...srcOptions };
     options = { ...defaults, ...options };
 
     const dom = new JSDOM(html);
